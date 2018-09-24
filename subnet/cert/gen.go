@@ -78,7 +78,7 @@ func makeBasicCert(now time.Time) *x509.Certificate {
 			OrganizationalUnit: []string{"Acme Co." + "U"},
 		},
 		NotBefore:    now,
-		NotAfter:     now.AddDate(1, 0, 0), //1 year expiry
+		NotAfter:     now.AddDate(10, 0, 0), //10 year expiry
 		SubjectKeyId: subjectKeyBytes[:5],
 	}
 }
